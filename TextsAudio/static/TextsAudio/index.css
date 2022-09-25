@@ -1,0 +1,25 @@
+body{
+    background:rgb(98, 94, 94);
+    padding: 25px;
+}
+
+.wlcmtext{
+    text-align: center;
+}
+
+#aud{
+    margin-left: 400px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+ }
