@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>TTS App</title></head>
+<body>
+<h2>Text to Speech Tool</h2>
+
+<form method='POST' action='/speak/'>
+{% csrf_token %}
+<textarea name='text'></textarea><br>
+<button type='submit'>Convert</button>
+</form>
+
+{% if audio %}
+<audio controls>
+<source src='{{ audio }}' type='audio/mp3'>
+</audio>
+{% endif %}
+
+</body>
+</html>
